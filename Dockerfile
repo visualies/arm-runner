@@ -5,10 +5,10 @@ ARG RUNNER_VERSION=2.300.2
 FROM arm64v8/alpine
 
 # Create a new directory named actions-runner
-RUN mkdir /actions-runner
+RUN mkdir /arm-runner
 
 # Set the current working directory to actions-runner
-WORKDIR /actions-runner
+WORKDIR /arm-runner
 
 # Install the curl package and download the runner package
 RUN apk add --no-cache curl \
